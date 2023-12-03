@@ -22,7 +22,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           border: 0.8px solid var(--color-tertiary);
           border-radius: var(--radius2);
           font-size: clamp(var(--font-size7), 3vw, var(--font-size5));
-          color: #ffffff;
+          color: var(--color-background);
 
           &:hover {
             background-color: var(--color-secondary);
@@ -65,18 +65,17 @@ export const StyledButton = styled.button<iStyledButtonProps>`
         `;
       case 'editProfile':
         return css`
-          gap: 5px;
+          gap: 7px;
           width: fit-content;
           height: fit-content;
           background-color: transparent;
           border: none;
           text-decoration: underline;
           font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
-          color: #e5e1df;
+          color: var(--color-background);
         `;
       case 'addContact':
         return css`
-          gap: 15px;
           width: fit-content;
           height: fit-content;
           background-color: transparent;
@@ -87,17 +86,15 @@ export const StyledButton = styled.button<iStyledButtonProps>`
         `;
       case 'editContact':
         return css`
-          width: 2rem;
-          height: 2rem;
-          border-radius: 100%;
-          background-color: #e5e1df;
-          border: 1px solid var(--color-primary);
+          border-radius: var(--radius2);
+          background-color: var(--color-background);
+          border: 2.5px solid var(--color-primary);
           color: var(--color-primary);
           font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
 
           &:hover {
             background-color: var(--color-primary);
-            color: #e5e1df;
+            color: var(--color-background);
           }
         `;
       case 'logout':
@@ -108,7 +105,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           border: none;
           text-decoration: underline;
           font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
-          color: #e5e1df;
+          color: var(--color-background);
         `;
     }
   }}

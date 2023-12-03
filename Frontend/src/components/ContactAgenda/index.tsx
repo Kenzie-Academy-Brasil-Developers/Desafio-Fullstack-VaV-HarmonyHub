@@ -33,7 +33,7 @@ const ContactAgenda = ({ data, setContact }: ContactAgendaProps) => {
           buttonVariation={'editContact'}
           onClick={() => setContact(data)}
         >
-          <AiFillEdit size={15} />
+          <AiFillEdit size={18} />
         </Button>
       </div>
     </RegistryCard>

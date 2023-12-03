@@ -71,7 +71,12 @@ const StyledMain = styled.main`
 
     & > :nth-child(1) {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 50vw;
       gap: 20px;
+      border-radius: var(--radius3);
     }
 
     & > :nth-child(2) {
@@ -84,7 +89,7 @@ const StyledMain = styled.main`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 30pxs;
 
         p {
           color: var(--color-background);

@@ -1,4 +1,4 @@
-# Fullstack Challenge HarmonyHub
+# Fullstack Challenge KenzieAcademy-Brazil: HarmonyHub
 
 # Backend
 

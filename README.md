@@ -77,7 +77,11 @@ This frontend service utilizes a REST API (Backend) for creating, listing, updat
 - React
 - Zod
 - Styled-components
-- Other relevant libraries.
+- Axios
+- React-router-dom
+- React-hook-form
+- React-hook-form
+- other relevant libraries
 
 ### Local API Dependency:
 

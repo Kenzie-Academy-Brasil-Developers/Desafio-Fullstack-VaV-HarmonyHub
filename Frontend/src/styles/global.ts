@@ -32,7 +32,7 @@ export default createGlobalStyle`
     --weight4: 400;
 
     --radius1: 25px;
-    --radius2: 9px;
+    --radius2: 15px;
     --radius3: 5px;
   }  
   * {

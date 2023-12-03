@@ -31,7 +31,7 @@ This backend service provides a REST API for creating, listing, updating, and de
 - Database: PostgreSQL
 - Technologies: TypeScript, TypeORM, Node.js, Express, and other libraries.
 
-| Method | Endpoint     | Responsibility             | Permission         |
+| Method | Endpoint     | Usage Outcome              | Permission         |
 |--------|--------------|----------------------------|--------------------|
 | POST   | /login       | User login                 | N/A                |
 | POST   | /users       | Create a new user          | N/A                |

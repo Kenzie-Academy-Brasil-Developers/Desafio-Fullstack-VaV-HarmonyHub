@@ -1,4 +1,6 @@
-# Fullstack Challenge Client Registry -- Backend
+# Fullstack Challenge HarmonyHub
+
+# Backend
 
 ## Project Setup Instructions:
 

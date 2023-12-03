@@ -8,7 +8,7 @@ const StyledMain = styled.main`
   margin: 0 auto;
   align-items: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -19,7 +19,7 @@ const StyledMain = styled.main`
     flex-direction: column;
     width: 100%;
 
-    @media (min-width: 800px) {
+    @media (min-width: 768px) {
       width: 50%;
       display: flex;
       justify-content: center;
@@ -49,7 +49,7 @@ const StyledMain = styled.main`
       }
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 768px) {
       margin-top: 0;
     }
   }
@@ -84,13 +84,13 @@ const StyledMain = styled.main`
       }
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 768px) {
       margin-top: 0;
     }
 
     & > :nth-child(3) {
       width: 100%;
-      max-width: 800px;
+      max-width: 768px;
       display: flex;
       justify-content: center;
       margin-top: 20px;
@@ -102,7 +102,7 @@ const StyledMain = styled.main`
       }
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 768px) {
       margin-top: 0;
     }
   }

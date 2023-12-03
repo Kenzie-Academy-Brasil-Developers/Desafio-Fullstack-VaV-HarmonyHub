@@ -39,7 +39,7 @@ const Home = () => {
       </section>
       <section>
         <div>
-          <p>Welcome to Personal Agenda!</p>
+          <p>Welcome to your Personal Agenda!</p>
           <h2>Account Log-in</h2>
         </div>
         <form onSubmit={handleSubmit(userLogin)}>

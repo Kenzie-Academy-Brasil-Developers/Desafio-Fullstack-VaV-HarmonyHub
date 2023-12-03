@@ -66,12 +66,12 @@ const StyledMain = styled.main`
       gap: 12px;
 
       p {
-        color: var(--color-gray200);
+        color: var(--color-gray300);
         font-size: clamp(var(--font-size7), 4vw, var(--font-size3));
       }
 
       h2 {
-        color: var(--color-gray200);
+        color: var(--color-tertiary);
         font-size: clamp(var(--font-size5), 6vw, var(--font-size2));
       }
     }
@@ -97,7 +97,7 @@ const StyledMain = styled.main`
       gap: 5px;
 
       p {
-        color: var(--color-gra2300);
+        color: var(--color-shade300);
         font-size: clamp(var(--font-size7), 4vw, var(--font-size4));
       }
     }

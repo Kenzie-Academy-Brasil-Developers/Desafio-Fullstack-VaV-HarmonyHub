@@ -30,7 +30,7 @@ const Home = () => {
     <StyledMain>
       <section>
         <div>
-          <h1>Personal Agenda</h1>
+          <h1>HarmonyHub™</h1>
           <p>
             Unlock your thoughts online. Effortlessly simple, blazingly fast,
             and delightfully intuitive.
@@ -39,7 +39,7 @@ const Home = () => {
       </section>
       <section>
         <div>
-          <p>Welcome!</p>
+          <p>Welcome to Personal Agenda!</p>
           <h2>Account Log-in</h2>
         </div>
         <form onSubmit={handleSubmit(userLogin)}>

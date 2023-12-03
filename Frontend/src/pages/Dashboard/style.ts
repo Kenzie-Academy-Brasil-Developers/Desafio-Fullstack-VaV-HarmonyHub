@@ -5,6 +5,7 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1.5rem;
 `;
 
 const StyledHeader = styled.header`
@@ -13,7 +14,7 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   border-top: 10px;
-  gap: 20px;
+  gap: 12px;
   width: 75vw;
   height: 220px;
   background: var(--color-secondary);

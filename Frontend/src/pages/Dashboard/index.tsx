@@ -42,7 +42,7 @@ const Dashboard = () => {
       <StyledDiv>
         <StyledHeader>
           <div>
-            <h1>Client Agenda</h1>
+            <h1>HarmonyHub Agenda</h1>
             <div>
               <p>Name: {updatedUser.name}</p>
               <p>E-Mail: {updatedUser.email}</p>

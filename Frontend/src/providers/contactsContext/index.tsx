@@ -1,16 +1,16 @@
-import React, { createContext, useState } from 'react';
-
-import api from '../../services/api';
+import { AxiosError } from 'axios';
 
 import { iContact } from './types';
 
+import api from '../../services/api';
+
+import React, { createContext, useState } from 'react';
+
 import { toast } from 'react-toastify';
 
-import { AxiosError } from 'axios';
+import { UpdateData } from '../../components/ContactModalAdaptation/schema';
 
 import { CreateData } from '../../components/ContactModalInsertion/schema';
-
-import { UpdateData } from '../../components/ContactModalAdaptation/schema';
 
 import useContextHook from '../../hooks/userContextHooks';
 

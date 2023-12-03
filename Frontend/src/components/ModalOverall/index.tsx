@@ -1,7 +1,10 @@
-import { createPortal } from 'react-dom';
-import { ReactNode, useEffect, useRef } from 'react';
-import React from 'react';
 import ModalContainer from './style';
+
+import { ReactNode, useEffect, useRef } from 'react';
+
+import { createPortal } from 'react-dom';
+
+import React from 'react';
 
 interface ModalProps {
   toggleModal: () => void;

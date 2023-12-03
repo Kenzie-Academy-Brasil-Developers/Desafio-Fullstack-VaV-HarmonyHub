@@ -1,7 +1,11 @@
 import React from 'react';
+
 import { iContact } from '../../providers/contactsContext/types';
+
 import { RegistryCard } from './style';
+
 import { AiFillEdit } from 'react-icons/ai';
+
 import Button from '../Buttons';
 
 interface ContactAgendaProps {

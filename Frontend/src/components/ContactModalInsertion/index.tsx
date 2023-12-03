@@ -1,14 +1,20 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
+
 import { Modal } from '../ModalOverall';
-import { CreateData, schema } from './schema';
+
+import { zodResolver } from '@hookform/resolvers/zod';
 
 import useContactContextHook from '../../hooks/contactsContextHooks';
 
+import { CreateData, schema } from './schema';
+
 import { ContactCreationStyled, ContactCreationError } from './style';
-import Input from '../PropsInput';
+
 import Button from '../Buttons';
+
+import Input from '../PropsInput';
+
 import { BsX } from 'react-icons/bs';
 
 interface ContactModalInsertionProps {

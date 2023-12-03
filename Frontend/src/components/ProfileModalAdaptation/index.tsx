@@ -1,15 +1,22 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
+
 import { Modal } from '../ModalOverall';
-import { UpdateData, schema } from './schema';
+
+import { zodResolver } from '@hookform/resolvers/zod';
+
+import React from 'react';
 
 import userContextHook from '../../hooks/userContextHooks';
 
 import { ProfileEditStyled, ProfileEditError } from './style';
-import Input from '../PropsInput';
-import Button from '../Buttons';
+
+import { UpdateData, schema } from './schema';
+
 import { BsX } from 'react-icons/bs';
+
+import Input from '../PropsInput';
+
+import Button from '../Buttons';
 
 interface ProfileModalAdapterProps {
   toggleModal: () => void;
@@ -42,7 +49,7 @@ const ProfileModalAdaptation = ({ toggleModal }: ProfileModalAdapterProps) => {
         <form onSubmit={handleSubmit(userUpdate)}>
           <Input
             inputVariation={'form'}
-            id={'nameEditProfile'} 
+            id={'nameEditProfile'}
             type={'text'}
             disabled={false}
             label={'Name'}

@@ -1,14 +1,22 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Modal } from '../ModalOverall';
+
+import { useForm } from 'react-hook-form';
+
 import { RegisterData, schema } from './schema';
 
-import userContextHook from '../../hooks/userContextHooks';
-import { StyledError, RegisterModalStyled } from './style';
-import Input from '../PropsInput';
+import React from 'react';
+
+import { Modal } from '../ModalOverall';
+
 import Button from '../Buttons';
+
+import Input from '../PropsInput';
+
+import { StyledError, RegisterModalStyled } from './style';
+
 import { BsX } from 'react-icons/bs';
+
+import userContextHook from '../../hooks/userContextHooks';
 
 interface RegistrationModalProps {
   toggleModal: () => void;

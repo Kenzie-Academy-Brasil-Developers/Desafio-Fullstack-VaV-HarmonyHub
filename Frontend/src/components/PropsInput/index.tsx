@@ -1,6 +1,8 @@
-import React from 'react';
-import { UseFormRegisterReturn } from 'react-hook-form';
 import { StyledInput } from './style';
+
+import React from 'react';
+
+import { UseFormRegisterReturn } from 'react-hook-form';
 
 interface iInputProps {
   id?: string;

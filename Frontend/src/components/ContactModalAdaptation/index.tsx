@@ -1,17 +1,25 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { Modal } from '../ModalOverall';
+
 import { UpdateData, schema } from './schema';
+
+import { useForm } from 'react-hook-form';
+
+import { zodResolver } from '@hookform/resolvers/zod';
+
+import { Modal } from '../ModalOverall';
 
 import useContactContextHook from '../../hooks/contactsContextHooks';
 
 import userContextHook from '../../hooks/userContextHooks';
 
 import { EditModalStyled, EditModalFailStyled } from './style';
+
 import Input from '../PropsInput';
+
 import Button from '../Buttons';
+
 import { iContact } from '../../providers/contactsContext/types';
+
 import { BsX } from 'react-icons/bs';
 
 interface ContactModalAdaptationProps {

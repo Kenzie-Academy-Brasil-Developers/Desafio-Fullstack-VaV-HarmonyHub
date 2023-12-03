@@ -1,20 +1,23 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import api from '../../services/api';
+
+import { iUser, iUserReturn, iUserUpdatedReturn } from './types';
+
+import { AxiosError } from 'axios';
+
 import React, {
   createContext,
   useEffect,
   useState,
   SetStateAction,
 } from 'react';
-import api from '../../services/api';
-import { iUser, iUserReturn, iUserUpdatedReturn } from './types';
-import { toast } from 'react-toastify';
-import { AxiosError } from 'axios';
 import { DataLogin } from '../../pages/Home/schema';
 
+import { toast } from 'react-toastify';
+
 import { RegisterData } from '../../components/RegistrationModal/schema';
+
 import { UpdateData } from '../../components/ProfileModalAdaptation/schema';
+
 import { useNavigate } from 'react-router-dom';
 
 export interface iUserProviderValue {

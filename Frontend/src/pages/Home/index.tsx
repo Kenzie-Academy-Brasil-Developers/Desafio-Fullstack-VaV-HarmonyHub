@@ -1,18 +1,20 @@
-import React from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
+
+import { zodResolver } from '@hookform/resolvers/zod';
 
 import { DataLogin, schema } from './schema';
 
-import RegistrationModal from '../../components/RegistrationModal';
+import Button from '../../components/Buttons';
+
+import { StyledMain, StyledError } from './style';
+
+import React from 'react';
 
 import userContextHook from '../../hooks/userContextHooks';
 
 import Input from '../../components/PropsInput';
 
-import Button from '../../components/Buttons';
-
-import { StyledMain, StyledError } from './style';
+import RegistrationModal from '../../components/RegistrationModal';
 
 const Home = () => {
   const { userLogin, toggleModal, isOpenModal } = userContextHook();

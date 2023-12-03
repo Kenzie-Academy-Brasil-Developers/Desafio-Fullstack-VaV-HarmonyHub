@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-
 import userContextHook from '../../hooks/userContextHooks';
+
+import React, { useState } from 'react';
 
 import useContactContextHook from '../../hooks/contactsContextHooks';
 
@@ -8,13 +8,16 @@ import ProfileModalAdaptation from '../../components/ProfileModalAdaptation';
 
 import ContactModalAddition from '../../components/ContactModalInsertion';
 
-import ContactModalEdit from '../../components/ContactModalAdaptation';
+import { StyledHeader, StyledMain, StyledDiv } from './style';
 
 import ContactAgenda from '../../components/ContactAgenda';
 
-import { BsBookmark, BsClipboard } from 'react-icons/bs';
 import { iContact } from '../../providers/contactsContext/types';
-import { StyledHeader, StyledMain, StyledDiv } from './style';
+
+import { BsBookmark, BsClipboard } from 'react-icons/bs';
+
+import ContactModalEdit from '../../components/ContactModalAdaptation';
+
 import Button from '../../components/Buttons';
 
 const Dashboard = () => {

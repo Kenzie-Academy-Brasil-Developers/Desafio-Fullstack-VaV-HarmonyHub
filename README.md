@@ -47,7 +47,6 @@ This backend service provides a REST API for creating, listing, updating, and de
 | PATCH  | /contacts/id | Update a contact           | Owner and Manager  |
 | DELETE | /contacts/id | Delete a contact           | Owner and Manager  |
 
-/**
 # Fullstack Challenge -- Frontend
 
 ## Project Setup Instructions:

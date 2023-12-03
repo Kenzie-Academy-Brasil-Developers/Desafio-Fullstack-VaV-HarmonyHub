@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledContent = styled.div`
+const RegisterModalStyled = styled.div`
   & > :nth-child(1) {
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,7 @@ const StyledContent = styled.div`
 
   & > :nth-child(2) {
     button {
-      margin-top: 20px;
+      margin-top: 30px;
     }
   }
 `;
@@ -24,4 +24,4 @@ const StyledError = styled.p`
   font-size: clamp(var(--font-size9), 3vw, var(--font-size6));
 `;
 
-export { StyledContent, StyledError };
+export { RegisterModalStyled, StyledError };

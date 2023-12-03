@@ -27,17 +27,17 @@ export const StyledInput = styled.div<iStyledInputProps>`
             width: min(100%, 800px);
             height: 50px;
             background-color: #fff;
-            border: 2px solid var(--color-primary);
-            border-radius: var(--radius2);
+            border: 2px solid #8CA5CF;
+            border-radius: var(--radius1);
             font-weight: var(--weight4);
             font-size: clamp(var(--font-size7), 4vw, var(--font-size6));
 
             &:focus {
-              border-color: var(--color-shade300);
+              border-color: var(--color-tertiary);
             }
 
             &::placeholder {
-              color: var(--color-secondary);
+              color: var(--color-shade300);
             }
           `;
       }

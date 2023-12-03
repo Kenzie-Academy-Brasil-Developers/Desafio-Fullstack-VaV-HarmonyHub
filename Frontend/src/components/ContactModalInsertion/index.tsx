@@ -84,7 +84,7 @@ const ContactModalAddition = ({
             <ContactCreationError>{errors.phone.message}</ContactCreationError>
           )}
 
-          <Button type={'submit'} buttonVariation={'Sign-in'}>
+          <Button type={'submit'} buttonVariation={'addContact'}>
             Create New Contact
           </Button>
         </form>

@@ -5,7 +5,7 @@ import { Modal } from '../ModalOverall';
 import { RegisterData, schema } from './schema';
 
 import userContextHook from '../../hooks/userContextHooks';
-import { StyledError, StyledContent } from './style';
+import { StyledError, RegisterModalStyled } from './style';
 import Input from '../PropsInput';
 import Button from '../Buttons';
 import { BsX } from 'react-icons/bs';
@@ -27,7 +27,7 @@ const RegistrationModal = ({ toggleModal }: RegistrationModalProps) => {
 
   return (
     <Modal toggleModal={toggleModal}>
-      <StyledContent>
+      <RegisterModalStyled>
         <div>
           <h2>Registry Form</h2>
           <Button
@@ -113,7 +113,7 @@ const RegistrationModal = ({ toggleModal }: RegistrationModalProps) => {
             Enroll
           </Button>
         </form>
-      </StyledContent>
+      </RegisterModalStyled>
     </Modal>
   );
 };

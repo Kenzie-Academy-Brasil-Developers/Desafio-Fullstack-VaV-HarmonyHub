@@ -76,7 +76,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
         `;
       case 'addContact':
         return css`
-          gap: 5px;
+          gap: 15px;
           width: fit-content;
           height: fit-content;
           background-color: transparent;

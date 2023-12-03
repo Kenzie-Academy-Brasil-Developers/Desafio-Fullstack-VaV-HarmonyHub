@@ -36,32 +36,26 @@ const StyledMain = styled.main`
       display: flex;
       flex-direction: column;
       gap: 15px;
-      border-bottom: 2px solid var(--color-gray300);
+      border-bottom: 2px solid var(--color-gray200);
 
       h1 {
-        color: var(--color-primary);
-        font-size: clamp(var(--font-size2), 7vw, var(--font-size0));
+        color: var(--color-tertiary);
+        font-size: clamp(var(--font-size1), 7vw, var(--font-size0));
       }
 
       p {
-        color: var(--color-quartenary);
-        font-size: clamp(var(--font-size7), 4vw, var(--font-size3));
+        color: var(--color-gray200);
+        font-size: clamp(var(--font-size7), 4vw, var(--font-size1));
       }
     }
 
     @media (min-width: 800px) {
       margin-top: 0;
-      img {
-        display: block;
-        max-height: 500px;
-        width: 55vw;
-        margin-top: 20px;
-      }
     }
   }
 
   & > :nth-child(2) {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     align-items: flex-start;
 
@@ -69,16 +63,16 @@ const StyledMain = styled.main`
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 12px;
 
       p {
-        color: var(--color-gray300);
-        font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
+        color: var(--color-gray200);
+        font-size: clamp(var(--font-size7), 4vw, var(--font-size3));
       }
 
       h2 {
-        color: var(--color-gray300);
-        font-size: clamp(var(--font-size5), 6vw, var(--font-size3));
+        color: var(--color-gray200);
+        font-size: clamp(var(--font-size5), 6vw, var(--font-size2));
       }
     }
 
@@ -103,8 +97,8 @@ const StyledMain = styled.main`
       gap: 5px;
 
       p {
-        color: var(--color-gray300);
-        font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
+        color: var(--color-gra2300);
+        font-size: clamp(var(--font-size7), 4vw, var(--font-size4));
       }
     }
 

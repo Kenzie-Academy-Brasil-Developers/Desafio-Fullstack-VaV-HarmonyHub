@@ -14,7 +14,7 @@ import ContactAgenda from '../../components/ContactAgenda';
 
 import { BsBookmark, BsClipboard } from 'react-icons/bs';
 import { iContact } from '../../providers/contactsContext/types';
-import { StyledHeader, StyledMain } from './style';
+import { StyledHeader, StyledMain, StyledDiv } from './style';
 import Button from '../../components/Buttons';
 
 const Dashboard = () => {
@@ -36,29 +36,32 @@ const Dashboard = () => {
 
   return (
     <>
-      <StyledHeader>
-        <div>
-          <h1>Client Agenda</h1>
+      <StyledDiv>
+        <StyledHeader>
           <div>
-            <p>Name: {updatedUser.name}</p>
-            <p>E-Mail: {updatedUser.email}</p>
-            <p>Phone: {updatedUser.phone}</p>
+            <h1>Client Agenda</h1>
+            <div>
+              <p>Name: {updatedUser.name}</p>
+              <p>E-Mail: {updatedUser.email}</p>
+              <p>Phone: {updatedUser.phone}</p>
+            </div>
           </div>
-        </div>
-        <div>
-          <Button
-            onClick={toggleModal}
-            buttonVariation={'editProfile'}
-            type={'button'}
-          >
-            Edit your Profile
-            <BsClipboard size={35} />
-          </Button>
-          <Button onClick={logOff} buttonVariation={'logout'} type={'button'}>
-            Log-gout
-          </Button>
-        </div>
-      </StyledHeader>
+          <div>
+            <Button
+              onClick={toggleModal}
+              buttonVariation={'editProfile'}
+              type={'button'}
+            >
+              Edit your Profile
+              <BsClipboard size={35} />
+            </Button>
+            <Button onClick={logOff} buttonVariation={'logout'} type={'button'}>
+              Log-out
+            </Button>
+          </div>
+        </StyledHeader>
+      </StyledDiv>
+
       <StyledMain>
         <section>
           <div>

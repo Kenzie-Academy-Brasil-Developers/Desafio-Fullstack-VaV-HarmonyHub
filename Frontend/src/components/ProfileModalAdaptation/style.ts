@@ -6,7 +6,7 @@ const ProfileEditStyled = styled.div`
     justify-content: space-between;
     align-items: center;
     h2 {
-      color: var(--color-gray300);
+      color: var(--color-gray200);
       font-size: clamp(var(--font-size5), 5vw, var(--font-size3));
     }
   }

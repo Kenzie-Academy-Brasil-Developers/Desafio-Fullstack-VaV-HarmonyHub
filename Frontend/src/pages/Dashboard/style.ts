@@ -1,27 +1,37 @@
 import styled from 'styled-components';
 
+const StyledDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  width: 100vw;
-  height: 200px;
-  background: #1d3868;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 10px;
+  gap: 20px;
+  width: 75vw;
+  height: 220px;
+  background: var(--color-secondary);
+  border-radius: var(--radius2);
 
   & > :nth-child(1) {
     width: min(90%, 1400px);
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
     display: flex;
     justify-content: space-between;
 
     h1 {
-      color: #f5f5f5;
+      color: var(--color-background);
       font-size: clamp(var(--font-size2), 7vw, var(--font-size0));
-      text-decoration: underline;
     }
 
     & > div {
@@ -30,8 +40,8 @@ const StyledHeader = styled.header`
       flex-direction: column;
 
       p {
-        color: #f5f5f5;
-        font-size: clamp(var(--font-size9), 3.5vw, var(--font-size6));
+        color: var(--color-background);
+        font-size: clamp(var(--font-size5), 3.5vw, var(--font-size5));
       }
     }
   }
@@ -39,6 +49,7 @@ const StyledHeader = styled.header`
   & > :nth-child(2) {
     width: min(90%, 1400px);
     margin: 0 auto;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +57,7 @@ const StyledHeader = styled.header`
 `;
 
 const StyledMain = styled.main`
-  margin-top: 25px;
+  margin-top: 35px;
 
   section {
     width: min(90%, 1400px);
@@ -75,21 +86,12 @@ const StyledMain = styled.main`
         margin-top: 50px;
 
         p {
-          color: var(--color-gray200);
+          color: var(--color-background);
           font-size: clamp(var(--font-size9), 4vw, var(--font-size4));
-        }
-
-        img {
-          display: none;
-          @media (min-width: 800px) {
-            display: block;
-            margin-top: 70px;
-            width: 50%;
-          }
         }
       }
     }
   }
 `;
 
-export { StyledHeader, StyledMain };
+export { StyledHeader, StyledMain, StyledDiv };

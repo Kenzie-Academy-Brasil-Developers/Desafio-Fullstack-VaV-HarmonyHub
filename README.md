@@ -87,3 +87,4 @@ This frontend service utilizes a REST API (Backend) for creating, listing, updat
 ### Local API Dependency:
 
 Ensure the local API is running before starting the frontend project.
+see the [Backend](#backend) section for more information.

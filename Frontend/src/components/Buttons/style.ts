@@ -9,7 +9,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  border-radius: var(--radius3);
+  border-radius: var(--radius-size-3);
   transition: 0.8s;
 
   ${({ buttonVariation }) => {
@@ -20,8 +20,8 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           height: 45px;
           background-color: var(--color-primary);
           border: 0.8px solid var(--color-tertiary);
-          border-radius: var(--radius2);
-          font-size: clamp(var(--font-size7), 3vw, var(--font-size5));
+          border-radius: var(--radius-size-2);
+          font-size: clamp(var(--font-size-7), 3vw, var(--font-size-5));
           color: var(--color-background);
 
           &:hover {
@@ -36,7 +36,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           background-color: transparent;
           border: none;
           text-decoration: underline;
-          font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
+          font-size: clamp(var(--font-size-7), 4vw, var(--font-size-5));
           color: #2a5296;
         `;
       case 'delete':
@@ -47,8 +47,8 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           border: none;
           text-decoration: underline;
 
-          font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
-          color: var(--color-gray300);
+          font-size: clamp(var(--font-size-7), 4vw, var(--font-size-5));
+          color: var(--color-shading300);
         `;
       case 'closeModal':
         return css`
@@ -56,8 +56,8 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           height: 20px;
           background-color: transparent;
           border: none;
-          font-size: clamp(var(--font-size7), 3vw, var(--font-size5));
-          color: var(--color-gray300);
+          font-size: clamp(var(--font-size-7), 3vw, var(--font-size-5));
+          color: var(--color-shading300);
 
           &:hover {
             color: var(--color-primary);
@@ -71,7 +71,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           background-color: transparent;
           border: none;
           text-decoration: underline;
-          font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
+          font-size: clamp(var(--font-size-7), 4vw, var(--font-size-5));
           color: var(--color-background);
         `;
       case 'addContact':
@@ -81,16 +81,16 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           background-color: transparent;
           border: none;
           text-decoration: underline;
-          font-size: clamp(var(--font-size5), 6vw, var(--font-size2));
-          color: var(--color-shade300);
+          font-size: clamp(var(--font-size-5), 6vw, var(--font-size-2));
+          color: var(--color-shading300);
         `;
       case 'editContact':
         return css`
-          border-radius: var(--radius2);
+          border-radius: var(--radius-size-2);
           background-color: var(--color-background);
           border: 2.5px solid var(--color-primary);
           color: var(--color-primary);
-          font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
+          font-size: clamp(var(--font-size-7), 3vw, var(--font-size-5));
 
           &:hover {
             background-color: var(--color-primary);
@@ -104,7 +104,7 @@ export const StyledButton = styled.button<iStyledButtonProps>`
           background-color: transparent;
           border: none;
           text-decoration: underline;
-          font-size: clamp(var(--font-size7), 4vw, var(--font-size5));
+          font-size: clamp(var(--font-size-7), 4vw, var(--font-size-5));
           color: var(--color-background);
         `;
     }

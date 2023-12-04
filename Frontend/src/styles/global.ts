@@ -8,32 +8,32 @@ export default createGlobalStyle`
     --color-tertiary: #6287D9;
     --color-quaternary: #B8D2FF;
     --color-card:#2A5296;
-    --color-shade300: #132545;
-    --color-shade200: #1A2436;
-    --color-shade100:##FFFFFF;
+    --color-shading300: #132545;
+    --color-shading200: #1A2436;
+    --color-shading100:##FFFFFF;
     --color-success: #62D98E;
     --color-fail: #B52545;
     --color-warning: #E9D98E;
 
-    --font-size0: 28px;
-    --font-size1: 26px;
-    --font-size2: 24px;
-    --font-size3: 22px;
-    --font-size4: 20px;
-    --font-size5: 18px;
-    --font-size6: 16px;
-    --font-size7: 14px;
-    --font-size8: 12px;
-    --font-size9: 10px;
+    --font-size-0: 28px;
+    --font-size-1: 26px;
+    --font-size-2: 24px;
+    --font-size-3: 22px;
+    --font-size-4: 20px;
+    --font-size-5: 18px;
+    --font-size-6: 16px;
+    --font-size-7: 14px;
+    --font-size-8: 12px;
+    --font-size-9: 10px;
     
-    --weight1: 700;
-    --weight2: 600;
-    --weight3: 500;
-    --weight4: 400;
+    --weight-font-1: 700;
+    --weight-font-2: 600;
+    --weight-font-3: 500;
+    --weight-font-4: 400;
 
-    --radius1: 25px;
-    --radius2: 15px;
-    --radius3: 5px;
+    --radius-size-1: 25px;
+    --radius-size-2: 15px;
+    --radius-size-3: 5px;
   }  
   * {
     margin:0;

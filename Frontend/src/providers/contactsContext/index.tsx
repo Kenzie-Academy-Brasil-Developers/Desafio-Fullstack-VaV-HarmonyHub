@@ -18,8 +18,8 @@ export interface iContactProviderValue {
   contactCreation: (data: CreateData) => void;
   contactUpdating: (data: UpdateData, id: number) => void;
   contactDeletion: (id: number) => void;
-  toggleContactModal: () => void;
-  toggleEditContactModal: () => void;
+  openContactModal: () => void;
+  openContactEditModal: () => void;
   isOpenContactModal: boolean;
   isOpenEditContactModal: boolean;
 }
@@ -37,9 +37,9 @@ export const ContactProvider = ({
   const [isOpenEditContactModal, setIsOpenEditContactModal] = useState(false);
   const { user, setUser } = useContextHook();
 
-  const toggleContactModal = () => setIsOpenContactModal(!isOpenContactModal);
+  const openContactModal = () => setIsOpenContactModal(!isOpenContactModal);
 
-  const toggleEditContactModal = () =>
+  const openContactEditModal = () =>
     setIsOpenEditContactModal(!isOpenEditContactModal);
 
   const contactCreation = async (data: CreateData) => {
@@ -49,7 +49,7 @@ export const ContactProvider = ({
       localStorage.setItem('@USER', JSON.stringify(res.data));
       setUser(res.data);
       toast.success('Contact successfully created');
-      toggleContactModal();
+      openContactModal();
     } catch (error) {
       const currentError = error as AxiosError<any>;
       toast.error(currentError.response?.data.message);
@@ -63,7 +63,7 @@ export const ContactProvider = ({
       localStorage.setItem('@USER', JSON.stringify(res.data));
       setUser(res.data);
       toast.success('Contact successfully updated');
-      toggleEditContactModal();
+      openContactEditModal();
     } catch (error) {
       const currentError = error as AxiosError<any>;
       toast.error(currentError.response?.data.message);
@@ -77,7 +77,7 @@ export const ContactProvider = ({
       localStorage.setItem('@USER', JSON.stringify(res.data));
       setUser(res.data);
       toast.success('Contact successfully deleted');
-      toggleEditContactModal();
+      openContactEditModal();
     } catch (error) {
       const currentError = error as AxiosError<any>;
       toast.error(currentError.response?.data.message);
@@ -88,9 +88,9 @@ export const ContactProvider = ({
     <ContactContext.Provider
       value={{
         contactCreation,
-        toggleContactModal,
+        openContactModal,
         isOpenContactModal,
-        toggleEditContactModal,
+        openContactEditModal,
         isOpenEditContactModal,
         contactUpdating,
         contactDeletion,

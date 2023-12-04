@@ -18,7 +18,7 @@ const StyledHeader = styled.header`
   width: 75vw;
   height: 220px;
   background: var(--color-secondary);
-  border-radius: var(--radius2);
+  border-radius: var(--radius-size-2);
 
   & > :nth-child(1) {
     width: min(90%, 1400px);
@@ -32,7 +32,7 @@ const StyledHeader = styled.header`
 
     h1 {
       color: var(--color-background);
-      font-size: clamp(var(--font-size2), 7vw, var(--font-size0));
+      font-size: clamp(var(--font-size-2), 7vw, var(--font-size-0));
     }
 
     & > div {
@@ -42,7 +42,7 @@ const StyledHeader = styled.header`
 
       p {
         color: var(--color-background);
-        font-size: clamp(var(--font-size5), 3.5vw, var(--font-size5));
+        font-size: clamp(var(--font-size-4), 3.5vw, var(--font-size-5));
       }
     }
   }
@@ -76,7 +76,7 @@ const StyledMain = styled.main`
       justify-content: space-between;
       width: 50vw;
       gap: 20px;
-      border-radius: var(--radius3);
+      border-radius: var(--radius-size-3);
     }
 
     & > :nth-child(2) {
@@ -93,7 +93,7 @@ const StyledMain = styled.main`
 
         p {
           color: var(--color-background);
-          font-size: clamp(var(--font-size9), 4vw, var(--font-size4));
+          font-size: clamp(var(--font-size-9), 4vw, var(--font-size-4));
         }
       }
     }

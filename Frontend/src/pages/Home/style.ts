@@ -36,16 +36,16 @@ const StyledMain = styled.main`
       display: flex;
       flex-direction: column;
       gap: 15px;
-      border-bottom: 2px solid var(--color-gray200);
+      border-bottom: 2px solid var(--color-shading200);
 
       h1 {
         color: var(--color-tertiary);
-        font-size: clamp(var(--font-size1), 7vw, var(--font-size0));
+        font-size: clamp(var(--font-size-1), 7vw, var(--font-size-0));
       }
 
       p {
-        color: var(--color-gray200);
-        font-size: clamp(var(--font-size7), 4vw, var(--font-size1));
+        color: var(--color-shading200);
+        font-size: clamp(var(--font-size7), 4vw, var(--font-size-1));
       }
     }
 
@@ -66,13 +66,13 @@ const StyledMain = styled.main`
       gap: 12px;
 
       p {
-        color: var(--color-gray300);
-        font-size: clamp(var(--font-size7), 4vw, var(--font-size3));
+        color: var(--color-shading300);
+        font-size: clamp(var(--font-size-7), 4vw, var(--font-size-3));
       }
 
       h2 {
         color: var(--color-tertiary);
-        font-size: clamp(var(--font-size5), 6vw, var(--font-size2));
+        font-size: clamp(var(--font-size-5), 6vw, var(--font-size-2));
       }
     }
 
@@ -97,8 +97,8 @@ const StyledMain = styled.main`
       gap: 5px;
 
       p {
-        color: var(--color-shade300);
-        font-size: clamp(var(--font-size7), 4vw, var(--font-size4));
+        color: var(--color-shading300);
+        font-size: clamp(var(--font-size-7), 4vw, var(--font-size-4));
       }
     }
 
@@ -111,7 +111,7 @@ const StyledMain = styled.main`
 const StyledError = styled.p`
   margin-top: 10px;
   color: var(--color-negative);
-  font-size: clamp(var(--font-size9), 3vw, var(--font-size6));
+  font-size: clamp(var(--font-size-9), 3vw, var(--font-size-6));
 `;
 
 export { StyledMain, StyledError };

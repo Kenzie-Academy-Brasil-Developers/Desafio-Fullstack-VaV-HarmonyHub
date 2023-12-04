@@ -19,11 +19,11 @@ import Input from '../PropsInput';
 import { BsX } from 'react-icons/bs';
 
 interface ContactModalInsertionProps {
-  toggleContactModal: () => void;
+  openContactModal: () => void;
 }
 
 const ContactModalAddition = ({
-  toggleContactModal,
+  openContactModal,
 }: ContactModalInsertionProps) => {
   const {
     register,
@@ -36,14 +36,14 @@ const ContactModalAddition = ({
   const { contactCreation } = useContactContextHook();
 
   return (
-    <Modal toggleModal={toggleContactModal}>
+    <Modal toggleModal={openContactModal}>
       <ContactCreationStyled>
         <div>
           <h2>Create New Contact</h2>
           <Button
             type={'button'}
             buttonVariation={'closeModal'}
-            onClick={toggleContactModal}
+            onClick={openContactModal}
           >
             <BsX size={50} />
           </Button>

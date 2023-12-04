@@ -24,16 +24,16 @@ const Dashboard = () => {
   const { user, updatedUser, isOpenModal, toggleModal, logOff } =
     userContextHook();
   const {
-    toggleContactModal,
+    openContactModal,
     isOpenContactModal,
-    toggleEditContactModal,
+    openContactEditModal,
     isOpenEditContactModal,
   } = useContactContextHook();
 
   const [contactId, setContactId] = useState<number>(0);
 
   const setContact = (elt: iContact) => {
-    toggleEditContactModal();
+    openContactEditModal();
     setContactId(elt.id);
   };
 
@@ -70,7 +70,7 @@ const Dashboard = () => {
           <div>
             <Button
               type={'button'}
-              onClick={toggleContactModal}
+              onClick={openContactModal}
               buttonVariation={'Sign-in'}
             >
               Create a new Contact
@@ -102,12 +102,12 @@ const Dashboard = () => {
         <div></div>
         {isOpenModal && <ProfileModalAdaptation toggleModal={toggleModal} />}
         {isOpenContactModal && (
-          <ContactModalAddition toggleContactModal={toggleContactModal} />
+          <ContactModalAddition openContactModal={openContactModal} />
         )}
         {isOpenEditContactModal && (
           <ContactModalEdit
             contactId={contactId}
-            toggleContactModalEdit={toggleEditContactModal}
+            openContactEditModal={openContactEditModal}
           />
         )}
       </StyledMain>

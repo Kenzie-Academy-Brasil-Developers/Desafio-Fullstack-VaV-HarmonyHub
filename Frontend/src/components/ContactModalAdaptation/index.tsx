@@ -23,12 +23,12 @@ import { iContact } from '../../providers/contactsContext/types';
 import { BsX } from 'react-icons/bs';
 
 interface ContactModalAdaptationProps {
-  toggleContactModalEdit: () => void;
+  openContactEditModal: () => void;
   contactId: number;
 }
 
 const ContactModalEdit = ({
-  toggleContactModalEdit,
+  openContactEditModal,
   contactId,
 }: ContactModalAdaptationProps) => {
   const {
@@ -47,14 +47,14 @@ const ContactModalEdit = ({
   };
 
   return (
-    <Modal toggleModal={toggleContactModalEdit}>
+    <Modal toggleModal={openContactEditModal}>
       <EditModalStyled>
         <div>
           <h2>Edit Contact</h2>
           <Button
             type={'button'}
             buttonVariation={'closeModal'}
-            onClick={toggleContactModalEdit}
+            onClick={openContactEditModal}
           >
             <BsX size={50} />
           </Button>
